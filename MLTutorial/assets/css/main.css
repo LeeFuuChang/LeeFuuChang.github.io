@@ -1335,18 +1335,18 @@
 	  text-decoration: none; }
 	#banner .more {
 	  background-image: url("images/arrow.svg");
-	  background-position: center 20px;
+	  background-position: center;
 	  background-repeat: no-repeat;
-	  background-size: 100px;
+	  background-size: 60px;
 	  border: 6px solid black;
 	  color: black;
 	  display: block;
-	  height: 8em;
+	  height: 6em;
 	  text-indent: 4em;
 	  border-radius: 100%;
 	  overflow: hidden;
 	  white-space: nowrap;
-  	  width: 8em;
+  	  width: 12em;
 	  z-index: 2;
   	  margin: 0 auto 2em auto;
 	}
