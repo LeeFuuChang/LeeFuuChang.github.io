@@ -21,13 +21,13 @@
 			-->
 				<section id="banner">
 					<div class="inner">
-						<h1 style="color: wheat;">Machine Learning<br>機器學習</h1>
+						<h1 style="color:navy;">Machine Learning<br>機器學習</h1>
 						<a href="#main" class="more scrolly"></a>
 					</div>
-					<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+					<video id="episodeVideo" width="100%" autoplay muted playsinline onended="run()"><source src="images/video1.mp4" type='video/mp4'/></video>
 				</section>
 			<!-- Main -->
-				<div id="main">
+				<div id="main" style="background: linear-gradient(to bottom, #7275a4, #4a4872, #302d4a);">
 					<div class="inner">
 					<!-- Boxes -->
 						<div class="thumbnails">
@@ -116,7 +116,7 @@
 		
 
 		<!-- Scripts -->
-			<script>document.querySelector('video').playbackRate = 1.5</script>
+			<script>document.querySelector('video').playbackRate = 0.5</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>

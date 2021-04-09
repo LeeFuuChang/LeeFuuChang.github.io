@@ -4,6 +4,14 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+const video_count = 1;
+
+function run(){
+        var nextVideo = "images/video"+video_count+".mp4";
+        videoPlayer.src = nextVideo;
+        videoPlayer.play();
+   };
+
 (function($) {
 
 	skel.breakpoints({
