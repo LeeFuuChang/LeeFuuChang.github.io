@@ -89,12 +89,6 @@ main .content nav .story span {
     color: #000000;
 }
 
-main .content li {
-    width: 100%;
-    height: 100%;
-    background: blue;
-}
-
 main .content .posts {
     display: flex;
     flex-direction: column;
@@ -106,6 +100,9 @@ main .content .posts article {
     display: flex;
     flex-direction: column;
     width: 30rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid #efe9e0;
 }
 
 main .content .posts article .info {
@@ -175,10 +172,67 @@ main .content .posts article .media {
     width: 100%;
     overflow: hidden;
     border-radius: .5rem;
+    background: #efe9e0;
 }
 
 main .content .posts article .media img {
     width: 100%;
+}
+
+main .content .posts article .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5rem;
+}
+
+main .content .posts article .action a {
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #000000;
+}
+
+main .content .posts article .action a:hover {
+    color: #737373;
+}
+
+main .content .posts article .action .left,
+main .content .posts article .action .right {
+    display: flex;
+    gap: 1rem;
+}
+
+main .content .posts article .like,
+main .content .posts article .replies,
+main .content .posts article .caption a {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+main .content .posts article .caption {
+    display: flex;
+    margin: .25rem 0;
+}
+
+main .content .posts article .caption p {
+    font-size: .9rem;
+}
+
+main .content .posts article .replies,
+main .content .posts article .caption .more {
+    font-weight: 400;
+    color: #737373;
+}
+
+main .content .posts article .comment {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin: .5rem 0;
 }
 
 main .advise {
