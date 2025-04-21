@@ -1,0 +1,90 @@
+aside {
+    position: fixed;
+    top: 0;
+    width: var(--aside-width);
+    height: 100%;
+    border-right: .1rem solid #efe9e0;
+    padding: .5rem .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.icon-square {
+    display: none;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    cursor: pointer;
+    margin: .25rem 0;
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+}
+
+aside li:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+aside li svg,
+aside li img {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+aside li img {
+    border-radius: 50%;
+}
+
+aside li:first-of-type {
+    font-weight: 600;
+}
+
+aside ul:first-of-type li:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+aside ul:first-of-type li:first-of-type:hover {
+    background: transparent;
+}
+
+aside ul:first-of-type li:first-of-type svg {
+    scale: 1.25;
+    max-width: unset;
+    max-height: unset;
+}
+
+@media (width <= 1260px) {
+    :root {
+        --aside-width: 4.5rem;
+    }
+
+    .icon-square {
+        display: unset;
+    }
+
+    .icon-rectangle {
+        display: none;
+    }
+
+    aside ul:first-of-type li:first-of-type {
+        padding: 0;
+    }
+    aside li span {
+        display: none;
+    }
+}
