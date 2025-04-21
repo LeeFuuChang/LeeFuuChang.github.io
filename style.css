@@ -317,3 +317,15 @@ main .advise .main-advise-user div span {
         display: none;
     }
 }
+
+@media (width <= 760px) {
+    main nav .story:nth-last-child(1) {
+        display: none;
+    }
+}
+
+@media (width <= 660px) {
+    main {
+        padding: 0;
+    }
+}
